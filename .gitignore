@@ -1,0 +1,20 @@
+# Notebook execution artifacts
+Notebooks/*.executed.ipynb
+
+# Notebook-generated outputs
+PSSM_spectrum_comparison.jpg
+PSSM_spectrum_comparison.pdf
+Table 3 - charge_permutations.csv
+loocv_plot.jpg
+positional_counts.csv
+positional_counts_ext.csv
+positional_preferences_combined_other_legend.jpeg
+tpr_curves.jpg
+pssm_charge.pkl
+pssm_expanded.pkl
+pssm_matrix.pkl
+
+
+# Python cache
+__pycache__/
+*.pyc
