@@ -6,6 +6,8 @@ CMAscan is a repository for curated chaperone-mediated autophagy (CMA) motif dat
 
 - `dataset/cma_motif_dataset.csv` and `dataset/cma_motif_dataset.xlsx`
   - curated CMA motif dataset with literature annotations
+- `dataset/dataset_seqs.fasta` and `dataset/dataset_hq_seqs.fasta`
+  - FASTA files used for motif-to-sequence consistency checks
 - `PSSM/cPSSM.pkl`
   - canonical PSSM built from validated canonical CMA motifs
 - `PSSM/ePSSM.pkl`
@@ -49,7 +51,7 @@ CMAscan is a repository for curated chaperone-mediated autophagy (CMA) motif dat
 - motif permutation scoring
 - LOOCV benchmarking and TPR plotting
 
-The notebook is written so it can run locally or in Google Colab. When run in Colab from GitHub, it fetches required files directly from this repository.
+The notebook is written so it can run locally or in Google Colab. When run in Colab from GitHub, it fetches required files directly from this repository and downloads the reviewed human reference proteome from UniProt when needed.
 
 ## Google Colab
 
