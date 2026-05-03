@@ -1,8 +1,0 @@
-protein_name,mer,type,localization,cPSSM,ePSSM,IUPred3,MusiteDeep
-protA,PPPP,SH3_binding_like,4,0.8,0.1115,0.75,0.0
-protA,TP,proline_directed_site,3,0.95,0.085,0.675,0.7
-protA,TP,proline_directed_site,19,0.95,0.1375,0.675,0.55
-protA,NSTA,N_glycosylation_like,11,0.925,0.1219,0.58,0.45
-protB,PPPP,SH3_binding_like,13,0.8,0.04,0.75,0.0
-protB,TP,proline_directed_site,8,0.95,0.1214,0.675,0.45
-protB,NQST,N_glycosylation_like,5,0.925,0.1214,0.6575,0.75
