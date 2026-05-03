@@ -1,0 +1,33 @@
+# Notebook execution artifacts
+Notebooks/*.executed.ipynb
+
+# Runtime outputs
+Results/*
+!Results/.gitkeep
+Results/Figures/*
+!Results/Figures/.gitkeep
+
+# Root-level temporary artifacts
+PSSM_spectrum_comparison.svg
+loocv_plot.svg
+positional_preferences_combined_other_legend.svg
+tpr_curves.svg
+Table 3 - charge_permutations.csv
+positional_counts.csv
+positional_counts_ext.csv
+pssm_matrix.pkl
+pssm_expanded.pkl
+dataset_seqs.fasta
+dataset_hq_seqs.fasta
+iupred3.tar.gz
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS metadata
+.DS_Store
+
+# local smoke-test artifacts
+test/
+ExternalSoftware/
