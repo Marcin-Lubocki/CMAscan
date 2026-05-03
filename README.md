@@ -6,7 +6,7 @@ CMAscan is a browser-based pipeline for screening protein sequences for chaperon
 
 ## Run CMAscan
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](<COLAB_LINK_PLACEHOLDER>)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Marcin-Lubocki/CMAscan/blob/main/Notebooks/CMAscan_colab.ipynb)
 
 > *Click the badge above to open the notebook in Google Colab. Runs in your browser; no installation needed.*
 
@@ -25,10 +25,16 @@ The output is a CSV file plus a set of summary visualizations (motif type freque
 
 ## Quick start
 
-1. Open the Colab notebook using the badge above.
+1. Click the **Open in Colab** badge above.
 2. Click **Runtime → Run all**.
-3. When **Step 1** prompts you, click **Choose Files** and upload your FASTA file (`.fasta`, `.faa`, or `.txt`).
-4. The pipeline runs automatically. The output CSV is previewed and downloaded at the final step.
+3. Check **"Use demo input"** in Step 1 to try CMAscan with a built-in
+   example (no upload needed) — recommended for first-time users.
+4. To analyze your own sequences, leave "Use demo input" unchecked and
+   upload your FASTA file when prompted.
+5. To enable disorder scoring, check **"Use IUPred3"** and upload
+   `iupred3.tar.gz` when prompted (download from
+   https://iupred3.elte.hu/ — academic license, free).
+6. Results appear at the end of the notebook and download automatically.
 
 For details, troubleshooting, and parameter descriptions, see the notebook itself — every step is documented inline.
 
@@ -57,12 +63,25 @@ A single CSV file (`motif_hits_scored.csv`) with one row per motif candidate. Co
 ## Repository contents
 
 ```
-.
-├── CMAscan_colab.ipynb     Main analysis notebook (run in Colab)
-├── dataset/                Curated CMA motif dataset and reference sequences
-├── ExternalSoftware/       IUPred3 binary (downloaded automatically at runtime)
-├── LICENSE                 MIT License
-└── README.md               This file
+CMAscan/
+├── Notebooks/
+│   ├── CMAscan_colab.ipynb                              Main pipeline notebook
+│   ├── CMAscan_DB_analysis.ipynb                        Motif database analysis
+│   └── CMAscan_DB_analysis_sequence_and_structural_     Validation analysis
+│       features_validation.ipynb
+├── PSSM/
+│   ├── cPSSM.pkl                                        Canonical PSSM matrix
+│   └── ePSSM.pkl                                        Extended PSSM matrix
+├── Results/                                             Pipeline outputs (gitignored)
+├── dataset/
+│   ├── cma_motif_dataset.csv                            Curated CMA motif dataset
+│   ├── cma_motif_dataset.xlsx
+│   ├── demo_input.fasta                                 Example input (25 proteins)
+│   ├── motif_structures_sasa_v0.6.xlsx
+│   └── motif_structures_v0.6.csv
+├── LICENSE                                              MIT License
+├── README.md
+└── requirements.txt
 ```
 
 ## Dependencies
@@ -73,11 +92,13 @@ CMAscan installs its dependencies automatically when you run the notebook. For r
 - pandas, NumPy, SciPy
 - matplotlib, seaborn, plotly
 - tqdm
-- IUPred3 (downloaded at runtime from the IUPred3 distribution archive)
+- IUPred3 (optional external tool)
+
+IUPred3 is NOT bundled in this repository (license restriction). See Quick Start for download instructions.
 
 ## External tools and citations
 
-CMAscan uses [IUPred3](https://iupred3.elte.hu/) for protein disorder prediction. **If you publish results obtained with CMAscan, please cite the IUPred3 authors:**
+CMAscan uses [IUPred3](https://iupred3.elte.hu/) as an optional external tool, downloaded separately by the user under their own academic license from https://iupred3.elte.hu/. **If you publish results obtained with CMAscan, please cite the IUPred3 authors:**
 
 - Erdős G, Pajkos M, Dosztányi Z. IUPred3: prediction of protein disorder enhanced with unambiguous experimental annotation and visualization of evolutionary conservation. *Nucleic Acids Research* 2021;49(W1):W297–W303.
 - Mészáros B, Erdős G, Dosztányi Z. IUPred2A: context-dependent prediction of protein disorder as a function of redox state and protein binding. *Nucleic Acids Research* 2018;46(W1):W329–W337.
