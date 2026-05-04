@@ -26,6 +26,10 @@ The output is a CSV file plus a set of summary visualizations (motif type freque
 
 ## Quick start
 
+> **Note:** When opening the notebook from GitHub, Colab displays a
+> standard security warning ("This notebook was not authored by Google").
+> Click **Run anyway** — this is normal for all GitHub-hosted notebooks.
+
 1. Click the **Open in Colab** badge above.
 2. Click **Runtime → Run all**.
 3. Check **"Use demo input"** in Step 1 to try CMAscan with a built-in
