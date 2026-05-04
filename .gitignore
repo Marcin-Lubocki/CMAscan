@@ -31,3 +31,8 @@ __pycache__/
 # local smoke-test artifacts
 test/
 ExternalSoftware/
+
+# local demo-selection work files
+demo/
+demo.fasta
+Phosphoserine_Phosphothreonine.fasta

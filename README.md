@@ -76,7 +76,7 @@ CMAscan/
 ├── dataset/
 │   ├── cma_motif_dataset.csv                            Curated CMA motif dataset
 │   ├── cma_motif_dataset.xlsx
-│   ├── demo_input.fasta                                 Example input (25 proteins)
+│   ├── demo_input.fasta                                 Example input (11 proteins)
 │   ├── motif_structures_sasa_v0.6.xlsx
 │   └── motif_structures_v0.6.csv
 ├── LICENSE                                              MIT License
