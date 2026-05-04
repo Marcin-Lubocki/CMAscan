@@ -7,6 +7,7 @@ CMAscan is a browser-based pipeline for screening protein sequences for chaperon
 ## Run CMAscan
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Marcin-Lubocki/CMAscan/blob/main/Notebooks/CMAscan_colab.ipynb)
+https://colab.research.google.com/github/Marcin-Lubocki/CMAscan/blob/main/Notebooks/CMAscan_colab.ipynb
 
 > *Click the badge above to open the notebook in Google Colab. Runs in your browser; no installation needed.*
 
