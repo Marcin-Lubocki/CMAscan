@@ -29,7 +29,7 @@ The output is a CSV file plus a set of summary visualizations (motif type freque
 1. Click the **Open in Colab** badge above.
 2. Click **Runtime → Run all**.
 3. Check **"Use demo input"** in Step 1 to try CMAscan with a built-in
-   example (no upload needed) — recommended for first-time users.
+   example (no upload needed).
 4. To analyze your own sequences, leave "Use demo input" unchecked and
    upload your FASTA file when prompted.
 5. To enable disorder scoring, check **"Use IUPred3"** and upload
